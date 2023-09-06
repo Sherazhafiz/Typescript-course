@@ -10,33 +10,7 @@ console.log(c+5);
 //     newcondition:true
 // }
 // custom car type
-// type CarType = { company?: string, model: number, newcondition: boolean }
-// var car1:CarType={
-//     company: "Oodi",
-//     model: 2022,
-//     newcondition: false
-// }
-// var car2:CarType={
-//     company: "honda",
-//     model: 2023,
-//     newcondition: true
-// }
-// var car3:CarType={
-//     company: "Toyota",
-//     model: 2021,
-//     newcondition: true  
-// }
-// var car4:CarType={
-//     company: "Lemozeen",
-//     model: 2019,
-//     newcondition: true 
-// }
-// var car5:CarType={
-//     company: "Farari",
-//     model: 2021,
-//     newcondition: true  
-// }
-// var cars:CarType[]=[car1,car2,car3,car4,car5];
+type CarType = { company?: string, model: number, newcondition: boolean }
 
 // var cars:CarType[] = [{
 //     company: "honda",
@@ -64,10 +38,38 @@ console.log(c+5);
 //     newcondition: true  
 // }]
 
-// for (let index = 0; index < cars.length; index++) {
-//     console.log("Company : ",cars[index].company);
-//     console.log("model : ",cars[index].model);
-// }
+var car1:CarType={
+    company: "Oodi",
+    model: 2022,
+    newcondition: false
+}
+var car2:CarType={
+    company: "honda",
+    model: 2023,
+    newcondition: true
+}
+var car3:CarType={
+    company: "Toyota",
+    model: 2021,
+    newcondition: true  
+}
+var car4:CarType={
+    company: "Lemozeen",
+    model: 2019,
+    newcondition: true 
+}
+var car5:CarType={
+    company: "Farari",
+    model: 2021,
+    newcondition: true  
+}
+var cars:CarType[]=[car1,car2,car3,car4,car5];
+
+for (let index = 0; index < cars.length; index++) {
+    console.log("Company : ",cars[index].company);
+    console.log("model : ",cars[index].model);
+}
+
 // cars.map((car)=>{
 //     console.log(`Company : ${car.company}  ||  model : ${car.model}`);
     
