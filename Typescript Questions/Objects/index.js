@@ -60,6 +60,26 @@ for (let index = 0; index < cars.length; index++) {
     console.log("Company : ", cars[index].company);
     console.log("model : ", cars[index].model);
 }
-// cars.map((car)=>{
-//     console.log(`Company : ${car.company}  ||  model : ${car.model}`);
-// })
+var person1 = {
+    name: "Ali",
+    age: 23,
+    IsStudent: true
+};
+var person2 = {
+    name: "Ahsan",
+    age: 20,
+    IsStudent: true
+};
+var person3 = {
+    name: "Bilal",
+    age: 28,
+    IsStudent: false
+};
+let count = 0;
+var persons = [person1, person2, person3];
+for (let index = 0; index < persons.length; index++) {
+    if (persons[index].IsStudent == true) {
+        count++;
+    }
+}
+console.log(`there are ${count} students in the list of onbjects`);
