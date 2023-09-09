@@ -56,10 +56,9 @@ var car5 = {
     newcondition: true
 };
 var cars = [car1, car2, car3, car4, car5];
-for (let index = 0; index < cars.length; index++) {
-    console.log("Company : ", cars[index].company);
-    console.log("model : ", cars[index].model);
-}
+cars.map((car) => {
+    console.log(`Company : ${car.company}  ||  model : ${car.model}  NewCondition : ${car.newcondition}`);
+});
 var person1 = {
     name: "Ali",
     age: 23,

@@ -64,11 +64,15 @@ var car5:CarType={
     newcondition: true  
 }
 var cars:CarType[]=[car1,car2,car3,car4,car5];
+cars.map((car)=>{
+    console.log(`Company : ${car.company}  ||  model : ${car.model}  NewCondition : ${car.newcondition}`);
+    
+})
 
-for (let index = 0; index < cars.length; index++) {
-    console.log("Company : ",cars[index].company);
-    console.log("model : ",cars[index].model);
-}
+// for (let index = 0; index < cars.length; index++) {
+//     console.log("Company : ",cars[index].company);
+//     console.log("model : ",cars[index].model);
+// }
 
 // cars.map((car)=>{
 //     console.log(`Company : ${car.company}  ||  model : ${car.model}`);
